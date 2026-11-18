@@ -6,7 +6,7 @@
   // the Worker only runs for /api/* requests.
   "assets": { "directory": "./public", "run_worker_first": ["/api/*"] },
   "d1_databases": [
-    { "binding": "DB", "database_name": "notice-board", "database_id": "PASTE-YOUR-DATABASE-ID-HERE" }
+    { "binding": "DB", "notice-web": "notice-web", "database_id": "0a5dd59c-33d1-4afb-bb91-3731bfb2e1bb" }
   ],
   // Every day at 03:17 UTC: delete guests who have not come back for 30 days, old sessions and old rate-limit marks.
   "triggers": { "crons": ["17 3 * * *"] },
