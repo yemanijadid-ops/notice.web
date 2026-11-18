@@ -1,0 +1,8 @@
+Burnt Serif Title fonts (bundled with Notice Board)
+
+BurntSerif-Title-Latin-Medium.ttf   = EB Garamond Medium      (SIL Open Font License 1.1)
+BurntSerif-Title-Persian-Medium.ttf = Noto Sans Arabic Medium (SIL Open Font License 1.1)
+
+Both are licensed under the SIL Open Font License, Version 1.1:
+https://openfontlicense.org
+Free for personal and commercial use, including bundling inside an app.

@@ -1,0 +1,17 @@
+{
+  "name": "notice-board",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  // The app itself is served as plain static files (free and unlimited);
+  // the Worker only runs for /api/* requests.
+  "assets": { "directory": "./public", "run_worker_first": ["/api/*"] },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "notice-board", "database_id": "PASTE-YOUR-DATABASE-ID-HERE" }
+  ],
+  // Every day at 03:17 UTC: delete guests who have not come back for 30 days, old sessions and old rate-limit marks.
+  "triggers": { "crons": ["17 3 * * *"] },
+  "vars": {
+    // Bump this date whenever the Pledge / Terms change in a way people must agree to again.
+    "TERMS_VERSION": "2026-11-18"
+  }
+}

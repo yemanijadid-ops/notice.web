@@ -1,0 +1,41 @@
+.nb-login { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #0a0705; color: #e8d9c4; }
+.nb-login form { width: min(380px, 100%); display: grid; gap: 12px; padding: 28px; border: 1px solid #3a2a1c; border-radius: 12px; background: #140e0a; }
+.nb-login h1 { margin: 0 0 4px; font-family: var(--font-display); font-weight: 400; font-size: 2rem; text-align: center; }
+.nb-login p.sub { margin: 0 0 8px; text-align: center; opacity: .7; font-size: .9rem; }
+.nb-login input[type=email], .nb-login input[type=password] { padding: 10px 12px; border-radius: 8px; border: 1px solid #4a3523; background: #0a0705; color: inherit; font: inherit; }
+.nb-login button { padding: 10px 12px; border-radius: 8px; border: 1px solid #6b4a2e; background: #3a2514; color: inherit; font: inherit; cursor: pointer; }
+.nb-login button.primary { background: #7a4a22; }
+.nb-login button:disabled { opacity: .5; cursor: default; }
+.nb-login .terms { display: flex; gap: 8px; align-items: flex-start; font-size: .85rem; opacity: .85; }
+.nb-login a { color: #d9a566; }
+.nb-login .msg { min-height: 1.2em; font-size: .85rem; color: #e0a27a; text-align: center; }
+.nb-login .links { display: flex; justify-content: space-between; font-size: .85rem; }
+.nb-login .linkbtn { background: none; border: 0; padding: 0; color: #d9a566; text-decoration: underline; }
+
+.nb-login.rtl { font-family: Tahoma, 'Segoe UI', sans-serif; }
+.nb-login .card { width: min(420px, 100%); display: grid; gap: 12px; padding: 28px; border: 1px solid #3a2a1c; border-radius: 12px; background: #140e0a; }
+.nb-login form { width: min(420px, 100%); }
+.nb-login .langrow { display: flex; justify-content: flex-end; }
+.nb-login.rtl .langrow { justify-content: flex-start; }
+.nb-login .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.nb-login .tabs .tab { background: #1c130c; }
+.nb-login .tabs .tab.on { background: #7a4a22; border-color: #a8703f; }
+.nb-login .or { text-align: center; font-size: .8rem; opacity: .6; }
+.nb-login .guestnote { margin: 0; font-size: .78rem; opacity: .65; text-align: center; line-height: 1.5; }
+.nb-login .pledge { border: 1px solid #3a2a1c; border-radius: 8px; padding: 8px 12px; font-size: .85rem; background: #100a07; }
+.nb-login .pledge summary { cursor: pointer; color: #d9a566; }
+.nb-login .pledge ol { margin: 8px 0 2px; padding-inline-start: 20px; display: grid; gap: 8px; line-height: 1.5; max-height: 260px; overflow: auto; }
+.nb-login input[type=text] { padding: 10px 12px; border-radius: 8px; border: 1px solid #4a3523; background: #0a0705; color: inherit; font: inherit; }
+.nb-login .code { font-family: ui-monospace, Consolas, monospace; font-size: 1.15rem; letter-spacing: .05em; text-align: center; padding: 14px 8px; border: 1px dashed #a8703f; border-radius: 8px; user-select: all; word-break: break-all; }
+.acct { display: grid; gap: 10px; }
+.acct-line { display: grid; gap: 4px; }
+.acct-line small { color: var(--muted); }
+.acct-input { padding: 8px 10px; border-radius: 6px; border: 1px solid #4a3523; background: #0a0705; color: inherit; font: inherit; width: 100%; box-sizing: border-box; }
+.acct-form { display: grid; gap: 8px; min-width: 260px; }
+.meter { height: 8px; border-radius: 4px; background: #2c1a10; overflow: hidden; }
+.meter-fill { height: 100%; background: #c07a3a; }
+.plan-list { display: grid; gap: 6px; }
+.plan-card { display: grid; gap: 2px; padding: 8px 12px; border: 1px solid #3a2a1c; border-radius: 8px; background: #190e08; opacity: .75; position: relative; }
+.plan-card.current { opacity: 1; border-color: #a8703f; }
+.plan-card .soon-tag { position: absolute; top: 8px; right: 10px; }
+.plan-card small { color: var(--muted); }
